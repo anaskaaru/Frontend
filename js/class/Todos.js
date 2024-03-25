@@ -8,7 +8,7 @@ class Todos {
         this.#backend_url = url;
     }
    
-    getTask = () => {
+    getTasks = () => {
         return new Promise(async(resolve, reject) => {
             fetch(this.#backend_url)
             .then((response) => response.json())
