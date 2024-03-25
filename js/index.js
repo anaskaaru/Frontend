@@ -1,5 +1,5 @@
 const BACKEND_ROOT_URL = 'https://todo-backend-4ttn.onrender.com/';
-import { Todos } from "../class/Todos.js";
+import { Todos } from "./class/Todos.js";
 
 const todos = new Todos(BACKEND_ROOT_URL);
 
