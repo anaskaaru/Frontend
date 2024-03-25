@@ -28,7 +28,7 @@ const renderLink =(li,id) => {
     a.addEventListener('click', (event) => {
         todos.removeTask(id).then((removed_id) => {
             console.log(removed_id)
-            const li_to_remove =document.querySelector([data-key=${removed_id}])
+            const li_to_remove =document.querySelector(`[data-key='${removed_id}]`)
             if (li_to_remove){
                 list.removeChild(li_to_remove)
             }
