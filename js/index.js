@@ -1,4 +1,4 @@
-const BACKEND_ROOT_URL = 'https://todo-backend-4ttn.onrender.com/';
+const BACKEND_ROOT_URL='https://todo-backend-4ttn.onrender.com'
 import { Todos } from "./class/Todos.js"
 
 const todos = new Todos(BACKEND_ROOT_URL)
@@ -40,6 +40,7 @@ const renderLink =(li,id) => {
 const getTasks =  () => {
     todos.getTasks().then((tasks) => {
         tasks.forEach(task => {
+            //console.log(task)
             renderTask(task)            
         })
         
@@ -74,7 +75,8 @@ input.addEventListener('keypress',(e) => {
             renderTask(task)
             input.value=''
             input.focus()
-           })            
+           })
+            
         }
     }
 })
