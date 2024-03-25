@@ -1,19 +1,19 @@
-class Task{
-    #id;
-    #text;
+class Task {
+    #id
+    #text
+
+    constructor(id,text) {
+        this.#id = id
+        this.#text = text
+    }
+
+    getID() {
+        return this.#id
+    }
     
-    constructor(id, text){
-        this.#id = id;
-        this.#text = text;
-    }
-
-    getId(){
-        return this.#id;
-    }
-
-    getText(){
-        return this.#text;
+    getText() {
+        return this.#text
     }
 }
 
-export { Task}
+export { Task }
