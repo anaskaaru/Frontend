@@ -26,11 +26,12 @@ const renderLink =(li,id) => {
     a.innerHTML ='<i class ="bi bi-trash"></i>'
     a.setAttribute('style','float: right')
     a.addEventListener('click', (event) => {
-        todos.removeTask(id).then((removed_id) => {
-            const li_to_remove =document.querySelector([data-key='${removed_id}'])
-            if (li_to_remove){
-                list.removeChild(li_to_remove)
-            }
+        getTasks()
+        //todos.removeTask(id).then((removed_id) => {
+            //const li_to_remove =document.querySelector([data-key='${removed_id}'])
+            //if (li_to_remove){
+            //    list.removeChild(li_to_remove)
+            //}
         }).catch((error) => {
             alert(error)
         })
